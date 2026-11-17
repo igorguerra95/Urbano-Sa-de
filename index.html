@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urbano Saúde – Clínica Médica e Saúde Mental Integrada</title>
+    <meta
+      name="description"
+      content="Clínica de saúde mental e especialidades médicas com atendimento humanizado: psiquiatria, psicologia, endocrinologia, cardiologia, clínica geral, nutrição e pediatria."
+    />
+    <meta
+      name="keywords"
+      content="Urbano Saúde, clínica de saúde mental, psiquiatria, psicologia, terapias, endocrinologia, cardiologia, clínica geral, nutricionista, pediatria, consulta humanizada"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- OpenGraph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Urbano Saúde" />
+    <meta
+      property="og:title"
+      content="Urbano Saúde – Clínica Médica e Saúde Mental Integrada"
+    />
+    <meta
+      property="og:description"
+      content="Cuidado médico que começa pela escuta. Agende sua primeira consulta em psiquiatria, psicologia e especialidades médicas integradas."
+    />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Urbano Saúde – Clínica Médica e Saúde Mental Integrada"
+    />
+    <meta
+      name="twitter:description"
+      content="Atendimento médico e emocional acolhedor, sem pressa e com olhar integral para mente e corpo."
+    />
+
+    <!-- Google Fonts: Cormorant Garamond + Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "MedicalClinic",
+            "name": "Urbano Saúde",
+            "description": "Clínica médica e de saúde mental dedicada ao cuidado integrado e humanizado da mente e do corpo.",
+            "medicalSpecialty": [
+              "Psychiatric",
+              "Psychology",
+              "Endocrinology",
+              "Cardiovascular",
+              "PrimaryCare",
+              "DietNutrition",
+              "Pediatric"
+            ],
+            "availableService": [
+              { "@type": "MedicalTherapy", "name": "Psiquiatria Humanizada" },
+              { "@type": "MedicalTherapy", "name": "Psicologia e Terapias" },
+              { "@type": "MedicalTherapy", "name": "Endocrinologia e Metabologia" },
+              { "@type": "MedicalTherapy", "name": "Cardiologia Preventiva" },
+              { "@type": "MedicalTherapy", "name": "Clínica Geral" },
+              { "@type": "MedicalTherapy", "name": "Nutrição Clínica" },
+              { "@type": "MedicalTherapy", "name": "Pediatria Acolhedora" }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Como funciona a primeira consulta na Urbano Saúde?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A primeira consulta foi pensada para oferecer tempo e tranquilidade. O profissional realiza uma escuta atenta do seu histórico, rotina, exames prévios e objetivos antes de propor qualquer conduta."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Qual é a diferença entre psiquiatria e psicologia na clínica?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Na Urbano Saúde, psiquiatras, psicólogos e terapeutas atuam de forma coordenada. A psicologia trabalha processos emocionais e comportamentais por meio da psicoterapia, enquanto a psiquiatria avalia aspectos clínicos e, quando indicado, o suporte medicamentoso."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Posso combinar especialidades médicas e acompanhamento emocional?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sim. Nosso modelo integra saúde mental com endocrinologia, cardiologia, clínica geral, nutrição e pediatria, permitindo que seu cuidado considere sono, metabolismo, saúde cardiovascular e bem-estar emocional em conjunto."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

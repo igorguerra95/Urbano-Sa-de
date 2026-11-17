@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+:root {
+  /* Paleta semântica em HSL — Branco Gelo (#F8FAFC) + Verde Folha (#16A34A) */
+  --background: 210 40% 98%;
+  --foreground: 156 26% 12%;
+
+  --surface: 210 35% 99%;
+  --surface-subtle: 204 28% 95%;
+  --surface-botanical: 144 38% 95%;
+
+  --primary: 142 76% 36%;
+  --primary-strong: 142 72% 27%;
+  --primary-deep: 145 64% 18%;
+  --primary-foreground: 210 40% 98%;
+
+  --muted: 210 24% 94%;
+  --muted-foreground: 156 12% 36%;
+
+  --border: 150 18% 87%;
+  --border-strong: 145 24% 76%;
+  --ring: 142 72% 29%;
+
+  /* Tokens de gradiente e sombra em camadas */
+  --gradient-ambient: radial-gradient(
+    ellipse 80% 60% at 78% 10%,
+    hsla(142, 60%, 88%, 0.42) 0%,
+    hsla(210, 40%, 98%, 0) 70%
+  );
+  --gradient-leaf-wash: linear-gradient(
+    135deg,
+    hsla(142, 54%, 94%, 0.72) 0%,
+    hsla(210, 40%, 98%, 0.96) 100%
+  );
+  --shadow-soft: 0 1px 2px hsla(156, 26%, 12%, 0.04),
+    0 8px 24px -6px hsla(156, 26%, 12%, 0.06);
+  --shadow-elevated: 0 2px 6px hsla(156, 26%, 12%, 0.05),
+    0 20px 44px -12px hsla(145, 45%, 18%, 0.12);
+  --shadow-cta: 0 6px 20px -4px hsla(142, 72%, 27%, 0.28);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    min-height: 100vh;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    letter-spacing: -0.025em;
+  }
+}
+
+.font-display {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.font-sans-body {
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.bg-ambient-canvas {
+  background-color: hsl(var(--background));
+  background-image: var(--gradient-ambient);
+}
+
+.bg-leaf-wash {
+  background-image: var(--gradient-leaf-wash);
+}
+
+.shadow-card-soft {
+  box-shadow: var(--shadow-soft);
+}
+
+.shadow-card-elevated {
+  box-shadow: var(--shadow-elevated);
+}
+
+.shadow-cta-leaf {
+  box-shadow: var(--shadow-cta);
+}
+
+/* Textura orgânica sutil em tela cheia */
+.grain-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+}
