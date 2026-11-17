@@ -42,6 +42,7 @@ concurrency:
 jobs:
   configure:
     name: Configurar Repositórios GitHub Pages
+    if: github.event.repository.name == 'modelo-previas'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repositório central
